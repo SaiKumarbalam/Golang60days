@@ -3,10 +3,10 @@ package main
 import "fmt"
 
 func main() {
-	num1 := 6
-	num2 := 5
-
-	Divid := num1 / num2
-
-	fmt.Println("Division:", Divid)
+	var num int
+	fmt.Print("Enter a number: ")
+	fmt.Scan(&num)
+	for i := 10; i >= 0; i-- {
+		fmt.Println(i)
+	}
 }

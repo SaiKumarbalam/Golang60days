@@ -1,12 +1,17 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
 func main() {
-	num1 := 6
-	num2 := 5
+	// create an unsorted slice of integers
+	nums := []int{4, 2, 8, 5, 1, 9}
 
-	sum := num1 + num2
+	// use the sort package to sort the slice
+	sort.Ints(nums)
 
-	fmt.Println("Addition:", sum)
+	// print the sorted slice
+	fmt.Println(nums)
 }
